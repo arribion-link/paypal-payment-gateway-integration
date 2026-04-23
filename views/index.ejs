@@ -35,10 +35,10 @@
       .descri-container{
         padding: 12px;
       }
-      /* .descri-container h1{
+      .descri-container h1{
         font-size: medium;
         color: skyblue;
-      } */
+      }
       button{
         background-color: yellowgreen;
         color: blue;
@@ -53,9 +53,22 @@
     </style>
 </head>
 <body>
+
     <div class="main-container">
-        <div>
+        <div style="display: flex; gap: 1em;">
             <!-- <h1>PAYPAL PAYMENT GATEWAY INTEGRATION</h1> -->
+            <div class="product-container">
+                <img src="https://placehold.net/book.svg" alt="">
+                <div class="descri-container">
+                    <div style="display: flex; justify-content: space-between;">
+                        <h1>Notebook</h1>
+                        <p>Price $<span>100</span></p>
+                    </div>
+                  <form action="/pay" method="post">
+                      <button type="submit">paypal</button>
+                  </form>
+                </div>
+            </div>
             <div class="product-container">
                 <img src="https://placehold.net/book.svg" alt="">
                 <div class="descri-container">
@@ -70,5 +83,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
